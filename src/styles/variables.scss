@@ -1,0 +1,115 @@
+
+
+// Cores
+
+// Marca
+$color-violet:      #271c47; // "Roxo/Violeta" — newsletter, texto dos botões amarelos
+$color-yellow:      #f7ca11; // "Amarelo" — botões Confira/Inscrever/Comprar do modal, "50% Off"
+$color-blue:        #3442b5; // "Azul" — botão Comprar do card, títulos de seção, "Frete grátis", aba ativa
+$color-blue-bright: #3019b2; // destaques do header ("100% segura", "Ofertas do dia"), categoria ativa
+
+// Textos
+$color-text:        #3f3f40; // "Preto" — texto padrão, preço, descrição
+$color-text-dark:   #3b3b3b; // abas da vitrine (inativas)
+$color-text-cat:    #4e4e4e; // rótulos das categorias
+$color-text-muted:  #9f9f9f; // "Cinza Médio" — menu do header, busca, descrição do modal
+$color-text-old:    #808080; // preço antigo (riscado)
+$color-text-footer: rgba(34, 34, 34, 0.71); // links do footer
+$color-placeholder: #676767; // inputs da newsletter
+$color-qty:         #271c47; // número do seletor de quantidade
+
+// Superfícies e bordas
+$color-white:       #ffffff;
+$color-bg-search:   #f6f5f2; // campo de busca
+$color-bg-light:    #f4f4f4; // footer, caixas de categoria
+$color-bg-page:     #f8f8f8; // "Neutras/Background"
+$color-border:      #bdbdbd; // abas da vitrine
+$color-border-soft: #e7e7e7; // inputs da newsletter
+$color-border-qty:  #d9d9d9; // seletor de quantidade
+$color-overlay:     rgba(0, 0, 0, 0.5); // fundo do modal (ajuste conforme o Figma)
+
+
+// Tipografia
+
+// Google Fonts: Poppins 300,400,500,600,700 · Work Sans 400,500,600 · Outfit 600
+$font-primary:   'Poppins', sans-serif;   // fonte principal (quase tudo)
+$font-secondary: 'Work Sans', sans-serif; // descrição do modal, links do footer
+$font-display:   'Outfit', sans-serif;    // só o título da newsletter
+
+$fw-light:    300;
+$fw-regular:  400;
+$fw-medium:   500;
+$fw-semibold: 600;
+$fw-bold:     700;
+
+// Tamanhos usados no layout
+$fs-10: 10px; // descrição do modal
+$fs-11: 11px; // "Veja mais detalhes" (modal)
+$fs-12: 12px; // top bar, menu, parcelamento, frete
+$fs-13: 13px; // copyright
+$fs-14: 14px; // botões, busca, categorias, footer
+$fs-15: 15px; // nome do produto no card, "Ver todos"
+$fs-16: 16px; // abas, preço antigo, botão Confira
+$fs-20: 20px; // preço do card, título/preço do modal
+$fs-30: 30px; // título de seção ("Produtos relacionados")
+$fs-32: 32px; // título da newsletter
+$fs-40: 40px; // "Parceiros"
+$fs-48: 48px; // título do banner principal (line-height 50px)
+
+
+// Layout
+
+$container:        1280px;
+$page-gutter:      80px;  // margem lateral em 1440px
+$header-height:    144px; // top bar 32 + header 72 + menu 40
+$hero-height:      390px;
+
+
+// Componentes
+
+// Card de produto
+$card-width:   304px;
+$card-height:  500px;
+$card-gap:     18px;
+$card-radius:  10px;
+$card-shadow:  0 3px 19px rgba(0, 0, 0, 0.22);
+$card-img-h:   228px;
+
+// Categorias
+$category-size:          128px;
+$category-gap:           42px;
+$category-shadow:        0 4px 11px rgba(0, 0, 0, 0.13);
+$category-shadow-active: 0 2px 9px rgba(0, 0, 0, 0.22);
+
+// Header
+$header-menu-shadow: 0 8px 16px rgba(57, 48, 19, 0.12);
+$search-radius:      10px;
+
+// Botões
+$btn-radius-sm: 4px;  // Comprar (card) — 44px de altura
+$btn-radius:    6px;  // Confira (48px), Comprar do modal (36px)
+$btn-radius-lg: 8px;  // Inscrever (newsletter)
+
+// Banners "Parceiros"
+$banner-width:  634px;
+$banner-height: 350px;
+$banner-radius: 20px;
+
+// Botão do banner principal ("Ver produto")
+$hero-btn-width:  206px;
+$hero-btn-height: 50px;
+$hero-btn-radius: 5px;
+
+// Marcas ("Navegue por marcas")
+$brand-size:   211px;
+$brand-gap:    42px;
+$brand-shadow: 0 7px 20px rgba(0, 0, 0, 0.13);
+$brand-logo-w: 117px; // 211 - 2×47 de padding
+$brand-logo-h: 37px;  // 211 - 2×87 de padding
+
+// Modal
+$modal-width:  769px;
+$modal-radius: 6px;
+
+// Abas da vitrine
+$tab-height: 40px;
