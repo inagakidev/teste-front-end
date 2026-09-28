@@ -1,20 +1,21 @@
 import "./styles/app.scss"
-import { useEffect } from "react";
-import { getProducts } from "../services/api.ts";
+import { useProducts } from "./hooks/useProducts";
 
 function App() {
-  useEffect(() => {
-    getProducts()
-      .then((products) => {
-        console.log('Produtos:', products);
-      })
-      .catch((error) => {
-        console.error("Erro:", error);
-      });
-  }, []);
+  const { products, loading, error } = useProducts();
+
+  if (loading) {
+    return <p>Carregando produtos...</p>
+  }
+  if (error) {
+    return <p>{error}</p>
+  }
 
   return (
-    <h1>Testando API</h1>
+    <div>
+      <p>{products.length} produtos carregados.</p>
+      <p>{products[0]?.productName}</p>
+    </div>
   )
 }
 
