@@ -1,0 +1,39 @@
+@use '../../../styles/variables' as *;
+
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 119px;               
+  max-width: $container;  
+  height: 32px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $color-border-soft;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 9px;                 
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    font-family: $font-primary;
+    font-weight: $fw-medium;
+    font-size: $fs-12;
+    line-height: normal;
+    color: $color-text-muted;   // #9F9F9F
+  }
+
+  strong {
+    font-weight: $fw-semibold;
+    color: $color-blue-bright;  // #3019B2
+  }
+}
