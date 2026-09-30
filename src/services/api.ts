@@ -1,4 +1,4 @@
-import type { Product, ProductResponse } from '../types//product';
+import type { Product, ProductResponse } from '../types/product';
 
 const API_URL = '/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json';
 

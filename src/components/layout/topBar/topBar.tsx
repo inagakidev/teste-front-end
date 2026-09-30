@@ -1,6 +1,5 @@
-// components/layout/TopBar/TopBar.tsx
-import TopBarItem from './topBarItem.tsx';
-import styles from "./topBar.module.scss";
+import TopBarItem from './topBarItem';
+import styles from './topBar.module.scss';
 import shieldIcon from '../../../assets/shieldCheck.svg';
 import truckIcon from '../../../assets/truck.svg';
 import cardIcon from '../../../assets/creditCard.svg';
