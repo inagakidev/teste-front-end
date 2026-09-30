@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   gap: 87px;
-  padding: 56px 56px 56px 56px;
+  padding: 56px;
 }
 
 .image {
@@ -32,7 +32,7 @@
   font-weight: $fw-regular;
   font-size: $fs-20;
   line-height: 1;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-text;
 }
@@ -42,7 +42,7 @@
   font-weight: $fw-semibold;
   font-size: $fs-20;
   line-height: 1;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   color: $color-text;
 }
 
@@ -58,15 +58,15 @@
   font-weight: $fw-medium;
   font-size: $fs-10;
   line-height: 1.505;
-  letter-spacing: 5%;
-  color: $color-text-muted;          
+  letter-spacing: 0.05em;
+  color: $color-text-muted;
 }
 
 .moreLink {
   font-family: $font-secondary;
   font-weight: $fw-semibold;
   font-size: $fs-11;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   color: $color-blue;
 
   &:hover {
@@ -87,7 +87,7 @@
   width: 110px;
   height: 36px;
   padding: 0 9px;
-  border: 1px solid $color-border-qty; 
+  border: 1px solid $color-border-qty;
   border-radius: 4px;
 
   button {
@@ -107,7 +107,7 @@
     font-family: $font-primary;
     font-weight: $fw-medium;
     font-size: $fs-16;
-    color: $color-qty;               
+    color: $color-qty;
     font-variant-numeric: tabular-nums;
   }
 }
@@ -115,13 +115,13 @@
 .buyButton {
   width: 188px;
   height: 36px;
-  border-radius: $btn-radius;       
+  border-radius: $btn-radius;
   background: $color-yellow;
   font-family: $font-primary;
   font-weight: $fw-bold;
   font-size: $fs-14;
   text-transform: uppercase;
-  color: $color-violet;              
+  color: $color-violet;
   transition: filter 0.2s;
 
   &:hover {
