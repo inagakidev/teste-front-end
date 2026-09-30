@@ -39,10 +39,7 @@ export default function PartnerBanners({ id }: PartnerBannersProps) {
       <ul className={styles.list}>
         {banners.map((banner, index) => (
           <li key={index}>
-            <article
-              className={styles.banner}
-              style={{ backgroundImage: `url(${banner.image})` }}
-            >
+            <article className={styles.banner} style={{ backgroundImage: `url(${banner.image})` }}>
               <h3 className={styles.title}>{banner.title}</h3>
               <p className={styles.text}>{banner.text}</p>
               <a href={banner.href} className={styles.button}>

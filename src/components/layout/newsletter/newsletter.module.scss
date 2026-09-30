@@ -1,134 +1,133 @@
 @use '../../../styles/variables' as *;
 
 .newsletter {
-    margin-top: 90px;
-    background: $color-violet;
+  margin-top: $section-gap;
+  background: $color-violet;
 }
 
 .content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: $container;
-    min-height: 162px;
-    margin: 0 auto;
-    padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: $container;
+  min-height: 162px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-width: 515px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 515px;
 }
 
 .title {
-    font-family: $font-display;
-    font-weight: $fw-semibold;
-    font-size: $fs-32;
-    line-height: 1.2;
-    color: $color-white;
+  font-family: $font-display;
+  font-weight: $fw-semibold;
+  font-size: $fs-32;
+  line-height: 1.2;
+  color: $color-white;
 }
 
 .description {
-    font-family: $font-primary;
-    font-weight: $fw-light;
-    font-size: $fs-14;
-    line-height: 18px;
-    color: $color-white;
+  font-family: $font-primary;
+  font-weight: $fw-light;
+  font-size: $fs-14;
+  line-height: 18px;
+  color: $color-white;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
 }
 
 .fields {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .input {
-    width: 233px;
-    padding: 12px 24px;
-    border: 1px solid $color-border-soft;
-    border-radius: 8px;
-    background: $color-white;
-    font-family: $font-primary;
-    font-size: $fs-14;
-    line-height: 18px;
-    color: $color-text;
+  width: 233px;
+  padding: 12px 24px;
+  border: 1px solid $color-border-soft;
+  border-radius: 8px;
+  background: $color-white;
+  font-family: $font-primary;
+  font-size: $fs-14;
+  line-height: 18px;
+  color: $color-text;
 
-    &::placeholder {
-        color: $color-placeholder;
-    }
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
 .button {
-    padding: 15px 40px;
-    border-radius: 8px;
-    background: $color-yellow;
-    font-family: $font-primary;
-    font-weight: $fw-semibold;
-    font-size: $fs-14;
-    line-height: 12px;
-    text-transform: uppercase;
-    color: #161615;
-    transition: filter 0.2s;
+  padding: 15px 40px;
+  border-radius: 8px;
+  background: $color-yellow;
+  font-family: $font-primary;
+  font-weight: $fw-semibold;
+  font-size: $fs-14;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #161615;
+  transition: filter 0.2s;
 
-    &:hover {
-        filter: brightness(0.95);
-    }
+  &:hover {
+    filter: brightness(0.95);
+  }
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-family: $font-primary;
-    font-size: $fs-14;
-    line-height: 1.5;
-    color: $color-white;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: $font-primary;
+  font-size: $fs-14;
+  line-height: 1.5;
+  color: $color-white;
+  cursor: pointer;
+
+  input {
+    appearance: none; // remove o visual padrão do navegador
+    display: grid;
+    place-content: center;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background: #f6f6f6;
+    border: 1px solid #8c342b;
+    border-radius: 1px;
     cursor: pointer;
 
-    input {
-        appearance: none; // remove o visual padrão do navegador
-        display: grid;
-        place-content: center;
-        width: 15px;
-        height: 15px;
-        margin: 0;
-        background: #f6f6f6;
-        border: 1px solid #8c342b;
-        border-radius: 1px;
-        cursor: pointer;
-
-
-        &::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: #8c342b;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-            transform: scale(0);
-            transition: transform 0.15s ease;
-        }
-
-        &:checked::before {
-            transform: scale(1);
-        }
-
-        &:focus-visible {
-            outline: 2px solid $color-yellow;
-            outline-offset: 2px;
-        }
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #8c342b;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      transform: scale(0);
+      transition: transform 0.15s ease;
     }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-yellow;
+      outline-offset: 2px;
+    }
+  }
 }
 
 .success {
-    font-family: $font-primary;
-    font-size: $fs-14;
-    color: $color-yellow;
+  font-family: $font-primary;
+  font-size: $fs-14;
+  color: $color-yellow;
 }

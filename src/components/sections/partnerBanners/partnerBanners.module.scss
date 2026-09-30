@@ -2,7 +2,7 @@
 
 .partners {
   max-width: $container;
-  margin: 90px auto 0;
+  margin: $section-gap auto 0;
 }
 
 .list {
@@ -16,18 +16,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: $banner-width;            
-  height: $banner-height;          
+  width: $banner-width;
+  height: $banner-height;
   padding: 114px 44px 0;
-  border-radius: $banner-radius;   
+  border-radius: $banner-radius;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-color: $color-violet; 
+  background-color: $color-violet;
   &::before {
     content: '';
     position: absolute;
-    inset: auto 0 0 0;             
+    inset: auto 0 0 0;
     height: 261px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 85%);
     z-index: 0;
@@ -65,14 +65,14 @@
   height: 48px;
   margin-top: auto;
   margin-bottom: 40px;
-  border-radius: $btn-radius;      
+  border-radius: $btn-radius;
   background: $color-yellow;
   font-family: $font-primary;
   font-weight: $fw-bold;
   font-size: $fs-16;
   letter-spacing: 1.28px;
   text-transform: uppercase;
-  color: $color-violet;            
+  color: $color-violet;
   transition: filter 0.2s;
 
   &:hover {

@@ -2,31 +2,33 @@
 
 .brands {
   max-width: $container;
-  margin: 90px auto 0;
+  margin: $section-gap auto 0;
 }
 
 .list {
   display: flex;
   justify-content: center;
-  gap: $brand-gap;                 
+  gap: $brand-gap;
   margin-top: 32px;
-  padding: 10px 0 20px;            
+  padding: 10px 0 20px;
 }
 
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $brand-size;            
+  width: $brand-size;
   height: $brand-size;
   border-radius: 50%;
   background: $color-white;
-  box-shadow: $brand-shadow;    
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: $brand-shadow;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 
   img {
-    width: $brand-logo-w;          
-    height: $brand-logo-h;         
+    width: $brand-logo-w;
+    height: $brand-logo-h;
     object-fit: contain;
   }
 

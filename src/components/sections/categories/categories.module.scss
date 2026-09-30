@@ -1,65 +1,68 @@
 @use '../../../styles/variables' as *;
 
 .categories {
-    margin-top: 39px;
+  margin-top: 39px;
 }
 
 .list {
-    display: flex;
-    justify-content: center;
-    gap: 42px;
+  display: flex;
+  justify-content: center;
+  gap: $category-gap;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
-    padding: 0;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 
-    &:hover .box {
-        transform: translateY(-4px);
-    }
+  &:hover .box {
+    transform: translateY(-4px);
+  }
 }
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 128px;
-    height: 128px;
-    border-radius: 10px;
-    background: $color-bg-light; 
-    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.13);
-    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $category-size;
+  height: $category-size;
+  border-radius: 10px;
+  background: $color-bg-light;
+  box-shadow: $category-shadow;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
 
-    img {
-        width: 61px;
-        height: 61px;
-        object-fit: contain;
-    }
+  img {
+    width: 61px;
+    height: 61px;
+    object-fit: contain;
+  }
 }
 
 .label {
-    font-family: $font-primary;
-    font-weight: $fw-medium;
-    font-size: $fs-14;
-    line-height: normal;
-    white-space: nowrap;
-    color: $color-text-cat; 
+  font-family: $font-primary;
+  font-weight: $fw-medium;
+  font-size: $fs-14;
+  line-height: normal;
+  white-space: nowrap;
+  color: $color-text-cat;
 }
 
 .active {
-    .box {
-        background: $color-white;
-        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.22);
-    }
+  .box {
+    background: $color-white;
+    box-shadow: $category-shadow-active;
+  }
 
-    .label {
-        font-weight: $fw-semibold;
-        color: $color-blue-bright; 
-    }
+  .label {
+    font-weight: $fw-semibold;
+    color: $color-blue-bright;
+  }
 }
