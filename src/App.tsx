@@ -8,6 +8,7 @@ import ProductShelf from "./components/sections/productShelf/productShelf"
 import ProductModal from "./components/ui/productModal/productModal"
 import { useState } from "react"
 import PartnerBanners from "./components/sections/partnerBanners/partnerBanners"
+import Brands from "./components/sections/brands/brands"
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
             <PartnerBanners id="partners-1" />
             <ProductShelf id="shelf-2" products={products} onSelectProduct={setSelectedProduct} />
             <PartnerBanners id="partners-2" />
-            {/* Navegue por marcas */}
+            <Brands/>
             <ProductShelf id="shelf-3" products={products} onSelectProduct={setSelectedProduct} />
           </>
         )}
