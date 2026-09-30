@@ -9,6 +9,8 @@ import ProductModal from "./components/ui/productModal/productModal"
 import { useState } from "react"
 import PartnerBanners from "./components/sections/partnerBanners/partnerBanners"
 import Brands from "./components/sections/brands/brands"
+import Footer from "./components/layout/footer/footer"
+import Newsletter from "./components/layout/newsletter/newsletter"
 
 
 function App() {
@@ -37,12 +39,13 @@ function App() {
             <PartnerBanners id="partners-1" />
             <ProductShelf id="shelf-2" products={products} onSelectProduct={setSelectedProduct} />
             <PartnerBanners id="partners-2" />
-            <Brands/>
+            <Brands />
             <ProductShelf id="shelf-3" products={products} onSelectProduct={setSelectedProduct} />
           </>
         )}
       </main>
-
+      <Newsletter/>
+      <Footer />
       <ProductModal
         key={selectedProduct?.productName}
         product={selectedProduct}
