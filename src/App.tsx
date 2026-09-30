@@ -5,12 +5,17 @@ import "./styles/app.scss"
 import { useProducts } from "./hooks/useProducts"
 import type { Product } from "./types/product"
 import ProductShelf from "./components/sections/productShelf/productShelf"
+import ProductModal from "./components/ui/productModal/productModal"
+import { useState } from "react"
+
 
 function App() {
-  const { products, loading, error } = useProducts()
+  const { products, loading, error } = useProducts();
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
 
   function handleSelectProduct(product: Product) {
-    console.log('abrir modal com:', product)
+    setSelectedProduct(product)
   }
 
   return (
@@ -32,6 +37,12 @@ function App() {
           />
         )}
       </main>
+
+      <ProductModal
+        key={selectedProduct?.productName}
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+      />
     </>
   )
 }
