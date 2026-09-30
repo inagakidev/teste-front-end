@@ -12,6 +12,7 @@
   max-width: $container;
   height: 72px;
   margin: 0 auto;
+  border-bottom: 1px solid $color-border-soft;
 }
 
 .actions {
@@ -31,4 +32,42 @@
   &:hover {
     opacity: 0.7;
   }
+}
+
+.menu {
+  max-width: $container;
+  height: 40px;
+  margin: 0 auto;
+  background: $color-white;
+  box-shadow: $header-menu-shadow;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 91px;
+  height: 100%;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: $font-primary;
+  font-weight: $fw-semibold;
+  font-size: $fs-12;
+  line-height: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $color-text-muted;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-blue-bright;
+  }
+}
+
+.menuHighlight {
+  color: $color-blue-bright;
 }

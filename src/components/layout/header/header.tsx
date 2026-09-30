@@ -3,6 +3,7 @@ import styles from './header.module.scss';
 import logoEconverse from "../../../assets/logo.svg"
 import SearchBar from '../../ui/searchBar/searchBar';
 import HeaderActions from './headerActions';
+import CategoryMenu from './categoryMenu';
 
 export default function Header() {
     return (
@@ -16,6 +17,7 @@ export default function Header() {
                 <SearchBar />
                 <HeaderActions />
             </div>
+            <CategoryMenu/>
         </header>
     );
 }
