@@ -3,11 +3,7 @@ import searchIcon from '../../../assets/magnifyingGlass.svg';
 
 export default function SearchBar() {
   return (
-    <form
-      className={styles.search}
-      role="search"
-      onSubmit={(event) => event.preventDefault()}
-    >
+    <form className={styles.search} role="search" onSubmit={(event) => event.preventDefault()}>
       <label htmlFor="search" className="srOnly">
         Buscar produtos
       </label>

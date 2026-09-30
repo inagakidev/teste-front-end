@@ -1,4 +1,4 @@
-export function formatPrice(cents: number):string {
+export function formatPrice(cents: number): string {
   const reais = cents / 100;
 
   return reais.toLocaleString('pt-BR', {

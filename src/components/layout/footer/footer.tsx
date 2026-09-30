@@ -13,7 +13,10 @@ const socials = [
 const columns = [
   { title: 'Institucional', links: ['Sobre Nós', 'Movimento', 'Trabalhe conosco'] },
   { title: 'Ajuda', links: ['Suporte', 'Fale Conosco', 'Perguntas Frequentes'] },
-  { title: 'Termos', links: ['Termos e Condições', 'Política de Privacidade', 'Troca e Devolução'] },
+  {
+    title: 'Termos',
+    links: ['Termos e Condições', 'Política de Privacidade', 'Troca e Devolução'],
+  },
 ];
 
 export default function Footer() {

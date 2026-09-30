@@ -1,4 +1,4 @@
-import styles from "./topBar.module.scss";
+import styles from './topBar.module.scss';
 
 interface TopBarItemProps {
   icon: string;

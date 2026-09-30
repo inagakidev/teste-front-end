@@ -1,12 +1,11 @@
 @use '../../../styles/variables' as *;
 
-
 .topBar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 119px;               
-  max-width: $container;  
+  gap: 119px;
+  max-width: $container;
   height: 32px;
   margin: 0 auto;
   padding: 0;
@@ -17,7 +16,7 @@
 .item {
   display: flex;
   align-items: center;
-  gap: 9px;                 
+  gap: 9px;
 
   img {
     width: 20px;
@@ -29,11 +28,11 @@
     font-weight: $fw-medium;
     font-size: $fs-12;
     line-height: normal;
-    color: $color-text-muted;   // #9F9F9F
+    color: $color-text-muted; // #9F9F9F
   }
 
   strong {
     font-weight: $fw-semibold;
-    color: $color-blue-bright;  // #3019B2
+    color: $color-blue-bright; // #3019B2
   }
 }
