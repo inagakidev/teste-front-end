@@ -3,12 +3,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: $card-width;              
-  height: $card-height;            
+  width: $card-width;
+  height: $card-height;
   padding: 32px 12px 16px;
   background: $color-white;
-  border-radius: $card-radius;     
-  box-shadow: $card-shadow;        
+  border-radius: $card-radius;
+  box-shadow: $card-shadow;
   flex-shrink: 0;
 }
 
@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
+  width: 100%;
   padding: 0;
   text-align: left;
   background: none;
@@ -29,7 +30,7 @@
 
 .image {
   width: 100%;
-  height: $card-img-h;             
+  height: $card-img-h;
   object-fit: contain;
   transition: transform 0.2s;
 }
@@ -51,7 +52,7 @@
 .oldPrice {
   font-family: $font-primary;
   font-size: $fs-16;
-  color: $color-text-old;          
+  color: $color-text-old;
 }
 
 .price {
@@ -72,13 +73,13 @@
   margin-top: 7px;
   font-family: $font-primary;
   font-size: $fs-12;
-  color: $color-blue;              
+  color: $color-blue;
 }
 
 .buyButton {
-  margin-top: auto;                
+  margin-top: auto;
   height: 44px;
-  border-radius: $btn-radius-sm;  
+  border-radius: $btn-radius-sm;
   background: $color-blue;
   font-family: $font-primary;
   font-weight: $fw-bold;

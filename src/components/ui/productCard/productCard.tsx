@@ -7,7 +7,6 @@ interface ProductCardProps {
   onSelect: (product: Product) => void;
 }
 
-
 const OLD_PRICE_FACTOR = 1.07;
 const INSTALLMENTS = 2;
 
@@ -17,22 +16,24 @@ export default function ProductCard({ product, onSelect }: ProductCardProps) {
 
   return (
     <article className={styles.card}>
-      <button
-        type="button"
-        className={styles.details}
-        onClick={() => onSelect(product)}
-        aria-label={`Ver detalhes de ${product.productName}`}
-      >
-        <img
-          src={product.photo}
-          alt={product.productName}
-          className={styles.image}
-          width={228}
-          height={228}
-          loading="lazy"
-        />
-        <h3 className={styles.name}>{product.descriptionShort}</h3>
-      </button>
+      <h3>
+        <button
+          type="button"
+          className={styles.details}
+          onClick={() => onSelect(product)}
+          aria-label={`Ver detalhes de ${product.productName}`}
+        >
+          <img
+            src={product.photo}
+            alt={product.productName}
+            className={styles.image}
+            width={228}
+            height={228}
+            loading="lazy"
+          />
+          <span className={styles.name}>{product.descriptionShort}</span>
+        </button>
+      </h3>
 
       <div className={styles.prices}>
         <s className={styles.oldPrice}>{formatPrice(oldPrice)}</s>
