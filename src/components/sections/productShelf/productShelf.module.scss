@@ -1,0 +1,98 @@
+@use '../../../styles/variables' as *;
+
+.shelf {
+    max-width: $container;
+    margin: 90px auto 0;
+}
+
+.tabs {
+    display: flex;
+    margin-top: 4px;
+}
+
+.tab {
+    flex: 1;
+    height: $tab-height;
+    margin-right: -1px;
+    border: 1px solid $color-border;
+    background: $color-white;
+    font-family: $font-primary;
+    font-size: $fs-16;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color-text-dark;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $color-blue;
+    }
+}
+
+.tabActive {
+    font-weight: $fw-bold;
+    color: $color-blue;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 24px;
+}
+
+.track {
+    display: flex;
+    gap: $card-gap;
+    margin: 0 -13px;
+    padding: 20px 18px;
+    scroll-padding-inline: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.slide {
+    scroll-snap-align: start;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: $color-white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: $color-text;
+    cursor: pointer;
+    transition: color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        color: $color-blue;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.arrowPrev {
+    left: -48px;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+.arrowNext {
+    right: -48px;
+}
