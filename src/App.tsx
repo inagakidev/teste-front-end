@@ -18,10 +18,6 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
 
-  function handleSelectProduct(product: Product) {
-    setSelectedProduct(product)
-  }
-
   return (
     <>
       <Header />
