@@ -7,6 +7,7 @@ import type { Product } from "./types/product"
 import ProductShelf from "./components/sections/productShelf/productShelf"
 import ProductModal from "./components/ui/productModal/productModal"
 import { useState } from "react"
+import PartnerBanners from "./components/sections/partnerBanners/partnerBanners"
 
 
 function App() {
@@ -28,13 +29,16 @@ function App() {
         {loading && <p className="container">Carregando produtos...</p>}
         {error && <p className="container">{error}</p>}
 
+
         {!loading && !error && (
-          <ProductShelf
-            id="shelf-1"
-            products={products}
-            onSelectProduct={handleSelectProduct}
-            showTabs
-          />
+          <>
+            <ProductShelf id="shelf-1" products={products} onSelectProduct={setSelectedProduct} showTabs />
+            <PartnerBanners id="partners-1" />
+            <ProductShelf id="shelf-2" products={products} onSelectProduct={setSelectedProduct} />
+            <PartnerBanners id="partners-2" />
+            {/* Navegue por marcas */}
+            <ProductShelf id="shelf-3" products={products} onSelectProduct={setSelectedProduct} />
+          </>
         )}
       </main>
 
