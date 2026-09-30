@@ -14,7 +14,7 @@ Vitrine de produtos desenvolvida em **React + TypeScript**, seguindo o layout do
 
 ## Como rodar o projeto
 
-Pré-requisito: Node.js 18+
+Pré-requisito: Node.js 20.19+ ou 22.12+
 
 ```bash
 # clonar o repositório
